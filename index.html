@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotTrack - A Inteligência por Trás de Lançamentos de Alto Impacto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617;
+            color: #e2e8f0;
+            background-image: radial-gradient(circle at 1px 1px, rgba(56, 189, 248, 0.1) 1px, transparent 0);
+            background-size: 25px 25px;
+        }
+        .hero-glow {
+            box-shadow: 0 0 150px rgba(14, 165, 233, 0.3);
+        }
+        .feature-card {
+            background-color: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            backdrop-filter: blur(12px);
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(56, 189, 248, 0.5);
+            box-shadow: 0 10px 30px rgba(14, 165, 233, 0.1);
+        }
+        .btn-cta {
+            background-color: #0ea5e9;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(14, 165, 233, 0.4), inset 0 0 8px rgba(255, 255, 255, 0.1);
+            border: 1px solid #38bdf8;
+        }
+        .btn-cta:hover {
+            background-color: #38bdf8;
+            box-shadow: 0 0 35px rgba(56, 189, 248, 0.7);
+            transform: translateY(-3px) scale(1.05);
+        }
+        .api-logo {
+            transition: all 0.3s ease;
+            filter: grayscale(80%);
+            opacity: 0.8;
+        }
+        .api-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        .section-title {
+            background: -webkit-linear-gradient(45deg, #38bdf8, #e2e8f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        code {
+            background-color: rgba(30, 41, 59, 0.7);
+            border: 1px solid #334155;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="py-20 md:py-32 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-grid-slate-700/10 [mask-image:linear-gradient(to_bottom,white_5%,transparent_100%)]"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="w-24 h-24 hero-glow bg-sky-500/50 rounded-full mx-auto mb-8 flex items-center justify-center">
+                <svg class="h-12 w-12 text-sky-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-4 tracking-tighter">
+                A Inteligência por Trás de Lançamentos de <span class="section-title">Alto Impacto</span>.
+            </h1>
+            <p class="max-w-3xl mx-auto text-lg md:text-xl text-slate-400 mb-10">
+                Otimize suas conversões, gerencie múltiplos gateways de pagamento e envie dados precisos para a Meta. Tudo em uma única plataforma, <span class="font-bold text-white">sem precisar de uma linha de código.</span>
+            </p>
+            <a href="https://hottrack.netlify.app/" class="btn-cta font-bold text-lg py-4 px-10 rounded-full inline-block">
+                Crie sua Conta Gratuita Agora
+            </a>
+            <p class="text-sm text-slate-500 mt-4">Cadastro rápido, sem cartão de crédito.</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16 md:py-24">
+        
+        <section id="features">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Sua Stack de Marketing, <span class="section-title">Finalmente Unificada</span>.</h2>
+                <p class="max-w-2xl mx-auto mt-4 text-slate-400">Chega de depender de desenvolvedores ou de ter dados fragmentados. HotTrack é o centro de controle que conecta seu tráfego, pagamento e otimização de forma inteligente.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card p-8 rounded-2xl">
+                    <div class="mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-sky-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Gateway de Pagamento Flexível</h3>
+                    <p class="text-slate-400 mb-6">Seu gateway PIX caiu? O concorrente ofereceu taxas melhores? Com HotTrack, você cadastra múltiplas APIs e <span class="font-semibold text-sky-400">alterna entre elas com um único clique no painel</span>. Sem alterar códigos, sem perder vendas.</p>
+                    <div class="border-t border-slate-700 pt-4">
+                        <p class="text-sm font-semibold text-white mb-3">APIs Integradas:</p>
+                        <div class="flex items-center space-x-4">
+                           <div class="api-logo p-2 bg-slate-800 rounded-md"><p class="font-bold text-sm">PushinPay</p></div>
+                           <div class="api-logo p-2 bg-slate-800 rounded-md"><p class="font-bold text-sm">CN Pay</p></div>
+                           <div class="api-logo p-2 bg-slate-800 rounded-md"><p class="font-bold text-sm">Oasy.fy</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card p-8 rounded-2xl">
+                     <div class="mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-sky-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Pressels Inteligentes com Cloaker</h3>
+                    <p class="text-slate-400">Crie links de alta conversão que <span class="font-semibold text-sky-400">protegem suas campanhas</span>. Nossa tecnologia de pressel direciona usuários reais e mobile para seu bot do Telegram, enquanto desvia robôs, curiosos e analistas de anúncios para uma página de fallback segura. Máxima proteção, mínimo esforço.</p>
+                </div>
+
+                <div class="feature-card p-8 rounded-2xl">
+                     <div class="mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-sky-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 12l4.179 2.25M6.429 9.75l5.571 3 5.571-3m0 0l4.179-2.25L12 5.25 7.821 7.5" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Otimização Nível Expert para Meta</h3>
+                    <p class="text-slate-400">Cada PIX pago é um evento de compra enviado <span class="font-semibold text-sky-400">diretamente para a API de Conversões da Meta</span>, via servidor. Enviamos dados completos (fbp, fbc, IP, User Agent) para uma correspondência de alta qualidade. O resultado? CPA mais baixo, ROAS mais alto e inteligência real para suas campanhas.</p>
+                </div>
+                
+                <div class="feature-card p-8 rounded-2xl">
+                     <div class="mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-sky-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Gerenciamento Centralizado de Bots</h3>
+                    <p class="text-slate-400">Conecte todos os seus bots do Telegram em um único lugar. Cadastre-os uma vez e associe-os a qualquer uma de suas pressels com um simples menu de seleção. <span class="font-semibold text-sky-400">Agilidade para escalar</span> suas operações e campanhas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="py-24 mt-24 text-center bg-slate-900/50 rounded-3xl">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Preço <span class="section-title">Justo e Transparente</span>.</h2>
+                <p class="max-w-2xl mx-auto mt-4 mb-10 text-slate-400">Sem mensalidades, sem taxas de setup e sem surpresas. Nossa parceria é baseada no seu sucesso.</p>
+                
+                <div class="inline-block feature-card p-10 rounded-2xl border-sky-500/50">
+                    <p class="text-slate-300 text-lg">Taxa por Transação Aprovada</p>
+                    <p class="text-6xl font-black text-white my-4">2.99%</p>
+                    <p class="text-slate-400 max-w-xs">Cobramos apenas sobre os pagamentos PIX confirmados. Se você não vender, não paga nada. Simples assim.</p>
+                    <ul class="text-left mt-6 space-y-2 text-slate-300">
+                        <li class="flex items-center"><svg class="h-5 w-5 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Cadastro Gratuito</li>
+                        <li class="flex items-center"><svg class="h-5 w-5 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Pressels Ilimitadas</li>
+                        <li class="flex items-center"><svg class="h-5 w-5 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Bots e Pixels Ilimitados</li>
+                        <li class="flex items-center"><svg class="h-5 w-5 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Suporte Técnico</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="cta" class="py-24 mt-24 text-center">
+            <h2 class="text-4xl md:text-5xl font-black text-white leading-tight mb-4">Pronto para Elevar o Nível do Seu Jogo?</h2>
+            <p class="max-w-2xl mx-auto text-lg text-slate-400 mb-10">Assuma o controle total da sua operação, otimize suas campanhas com dados precisos e escale seus resultados. A ferramenta definitiva para afiliados e produtores de alta performance está a um clique de distância.</p>
+            <a href="https://hottrack.netlify.app/" class="btn-cta font-bold text-xl py-5 px-12 rounded-full inline-block">
+                QUERO OTIMIZAR MINHAS VENDAS
+            </a>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-800 py-8">
+        <div class="container mx-auto px-6 text-center text-slate-500">
+            <p>&copy; 2025 HotTrack. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
