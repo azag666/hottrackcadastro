@@ -19,16 +19,16 @@
         .hero-glow {
             box-shadow: 0 0 150px rgba(14, 165, 233, 0.3);
         }
-        .feature-card, .power-card {
+        .power-card {
             background-color: rgba(15, 23, 42, 0.6);
             border: 1px solid rgba(56, 189, 248, 0.2);
             backdrop-filter: blur(12px);
             transition: all 0.3s ease;
         }
-        .feature-card:hover, .power-card:hover {
-            transform: translateY(-5px);
+        .power-card:hover {
+            transform: translateY(-5px) scale(1.02);
             border-color: rgba(56, 189, 248, 0.5);
-            box-shadow: 0 10px B30px rgba(14, 165, 233, 0.1);
+            box-shadow: 0 10px 30px rgba(14, 165, 233, 0.1);
         }
         .btn-cta {
             background-color: #0ea5e9;
@@ -49,14 +49,14 @@
         }
         .flow-item {
             position: relative;
-            padding-left: 2.5rem;
+            padding-left: 3.5rem; /* Increased padding */
         }
         .flow-item:not(:last-child)::before {
             content: '';
             position: absolute;
-            left: 14px;
-            top: 2.5rem;
-            bottom: -1rem;
+            left: 22px; /* Centered with the larger icon */
+            top: 3.5rem;
+            bottom: -1.5rem;
             width: 2px;
             background-color: rgba(56, 189, 248, 0.2);
         }
@@ -67,7 +67,7 @@
     <header class="py-20 md:py-32 text-center relative overflow-hidden">
         <div class="container mx-auto px-6 relative z-10">
             <div class="w-24 h-24 hero-glow bg-sky-500/50 rounded-full mx-auto mb-8 flex items-center justify-center">
-                 <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/manychat.svg" class="h-12 w-12" style="filter: invert(88%) sepia(31%) saturate(5431%) hue-rotate(172deg) brightness(101%) contrast(95%);" alt="ManyChat Icon"/>
+                 <img src="https://i.postimg.cc/YC8RfZdt/unnamed.png" class="h-12 w-12" alt="ManyChat Icon"/>
             </div>
             <h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-4 tracking-tighter">
                 Transforme seu ManyChat em uma <span class="section-title">Máquina de Vendas Inteligente</span>.
@@ -124,22 +124,30 @@
             <div class="max-w-2xl mx-auto">
                 <div class="space-y-12">
                     <div class="flow-item">
-                        <div class="absolute left-0 top-1 flex items-center justify-center h-8 w-8 rounded-full bg-slate-800 border border-sky-500/50 text-sky-400 font-bold">1</div>
+                        <div class="absolute left-0 top-1 flex items-center justify-center h-12 w-12 rounded-full bg-slate-800 border border-sky-500/50">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 12l4.179 2.25M6.429 9.75l5.571 3 5.571-3m0 0l4.179-2.25L12 5.25 7.821 7.5" /></svg>
+                        </div>
                         <h4 class="font-bold text-lg text-white">Anúncio da Meta</h4>
                         <p class="text-slate-400">Seu cliente clica no anúncio e é direcionado para o link da sua Pressel HotTrack.</p>
                     </div>
                     <div class="flow-item">
-                        <div class="absolute left-0 top-1 flex items-center justify-center h-8 w-8 rounded-full bg-slate-800 border border-sky-500/50 text-sky-400 font-bold">2</div>
+                        <div class="absolute left-0 top-1 flex items-center justify-center h-12 w-12 rounded-full bg-slate-800 border border-sky-500/50">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                        </div>
                         <h4 class="font-bold text-lg text-white">Pressel HotTrack</h4>
                         <p class="text-slate-400">O cloaker protege seu link, enquanto nossa tecnologia captura todos os dados do clique (fbclid, fbp) e a geolocalização do lead (cidade/estado).</p>
                     </div>
                     <div class="flow-item">
-                        <div class="absolute left-0 top-1 flex items-center justify-center h-8 w-8 rounded-full bg-slate-800 border border-sky-500/50 text-sky-400 font-bold">3</div>
+                        <div class="absolute left-0 top-1 flex items-center justify-center h-12 w-12 rounded-full bg-slate-800 border border-sky-500/50">
+                           <img src="https://i.postimg.cc/YC8RfZdt/unnamed.png" class="h-6 w-6" alt="ManyChat Icon"/>
+                        </div>
                         <h4 class="font-bold text-lg text-white">Fluxo no ManyChat</h4>
                         <p class="text-slate-400">O lead inicia a conversa. Seu fluxo chama a API da HotTrack para personalizar a conversa com a localização e gerar o PIX quando solicitado.</p>
                     </div>
                     <div class="flow-item">
-                        <div class="absolute left-0 top-1 flex items-center justify-center h-8 w-8 rounded-full bg-slate-800 border border-sky-500/50 text-sky-400 font-bold">4</div>
+                         <div class="absolute left-0 top-1 flex items-center justify-center h-12 w-12 rounded-full bg-slate-800 border border-sky-500/50">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
                         <h4 class="font-bold text-lg text-white">Pagamento e Otimização</h4>
                         <p class="text-slate-400">Assim que o PIX é pago, nosso webhook dispara o evento de 'Purchase' para a Meta CAPI, com os dados corretos para otimizar suas campanhas para o público comprador.</p>
                     </div>
@@ -152,7 +160,7 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-white">Preço <span class="section-title">Radicalmente Simples</span>.</h2>
                 <p class="max-w-2xl mx-auto mt-4 mb-10 text-slate-400">Sem mensalidades, sem taxas escondidas. Só cobramos uma pequena taxa se você vender. A parceria ideal para escalar.</p>
                 
-                <div class="inline-block feature-card p-10 rounded-2xl border-sky-500/50">
+                <div class="inline-block power-card p-10 rounded-2xl border-sky-500/50">
                     <p class="text-slate-300 text-lg">Taxa por Transação Aprovada</p>
                     <p class="text-6xl font-black text-white my-4">2.99%</p>
                     <p class="text-slate-400 max-w-xs">Essa taxa é sobre cada PIX gerado e pago através da nossa plataforma. O cadastro e todas as funcionalidades são gratuitas para usar.</p>
