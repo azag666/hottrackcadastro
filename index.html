@@ -90,7 +90,7 @@
                 <p class="max-w-2xl mx-auto mt-4 text-slate-400">O ManyChat é incrível, mas tem limites. HotTrack quebra essas barreiras, dando a você o poder de criar experiências que seus concorrentes só podem sonhar.</p>
             </div>
             <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
-                <div class="power-card p-8 rounded-2xl">
+                <div class="power-card p-8 rounded-2xl flex flex-col">
                     <div class="mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-sky-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
                     </div>
@@ -98,7 +98,7 @@
                     <p class="text-slate-400">No momento do clique, o HotTrack captura a cidade e o estado do seu lead. Com uma simples chamada de API, você pode usar essa informação dentro do ManyChat para criar uma copy ultra-personalizada. <br><br><span class="font-semibold text-sky-300">Ex: "Vi que você é de [CIDADE]. Temos uma oferta especial para sua região!"</span></p>
                 </div>
 
-                <div class="power-card p-8 rounded-2xl">
+                <div class="power-card p-8 rounded-2xl flex flex-col">
                     <div class="mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-sky-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h6m3-3.75l3 3m0 0l3-3m-3 3V1.5m9 5.25h-6m-6 2.25h-6m3 3.75l-3-3m0 0l-3 3m3-3V1.5" /></svg>
                     </div>
@@ -106,12 +106,22 @@
                     <p class="text-slate-400">Pare de enviar seus leads para checkouts externos. Com a API do HotTrack, você gera cobranças PIX diretamente no seu fluxo do ManyChat. Menos atrito, menos etapas e uma taxa de conversão drasticamente maior. O lead pede, o bot gera, o lead paga. Simples.</p>
                 </div>
                 
-                <div class="power-card p-8 rounded-2xl">
+                <div class="power-card p-8 rounded-2xl flex flex-col">
                     <div class="mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-sky-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-2">Rastreamento e Otimização Reais</h3>
-                    <p class="text-slate-400">O HotTrack conecta as pontas soltas. O clique no anúncio é vinculado ao usuário no Telegram. Quando o PIX é pago, enviamos um evento de compra perfeito para a Meta CAPI, com todos os dados do clique original. Finalmente, você vai otimizar suas campanhas com dados 100% precisos.</p>
+                    <p class="text-slate-400 flex-grow">O HotTrack conecta as pontas soltas. O clique no anúncio é vinculado ao usuário no Telegram. Quando o PIX é pago, enviamos um evento de compra perfeito para a Meta CAPI, com todos os dados do clique original.</p>
+                    
+                    <div class="mt-4 border-t border-sky-500/30 pt-4">
+                        <h4 class="font-semibold text-white mb-2">UTM vs. API: A Diferença Real</h4>
+                        <p class="text-sm text-slate-400">
+                            <strong class="text-red-400">UTMs (Postal):</strong> Contam de onde o lead veio, mas se perdem no caminho e são ignorados por ad blockers.
+                        </p>
+                        <p class="text-sm text-slate-300 mt-2">
+                            <strong class="text-green-400">API (Sedex c/ AR):</strong> Comunicação direta com a Meta, à prova de bloqueios e iOS 14+. Garante que a Meta aprenda com CADA venda para otimizar seus anúncios.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
