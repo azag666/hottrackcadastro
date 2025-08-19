@@ -189,5 +189,29 @@
         </div>
     </footer>
 
+    <script>
+        // Desabilita o clique com o botão direito
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+        // Desabilita atalhos de teclado para ferramentas de desenvolvedor
+        document.addEventListener('keydown', function(e) {
+            // F12
+            if (e.key === 'F12') {
+                e.preventDefault();
+            }
+            // Ctrl+Shift+I/J/C
+            if (e.ctrlKey && e.shiftKey && ['i', 'j', 'c'].includes(e.key.toLowerCase())) {
+                e.preventDefault();
+            }
+            // Ctrl+U
+            if (e.ctrlKey && e.key.toLowerCase() === 'u') {
+                e.preventDefault();
+            }
+            // Command+Option+I/J/C (para Mac)
+            if (e.metaKey && e.altKey && ['i', 'j', 'c'].includes(e.key.toLowerCase())) {
+                e.preventDefault();
+            }
+        });
+    </script>
 </body>
 </html>
